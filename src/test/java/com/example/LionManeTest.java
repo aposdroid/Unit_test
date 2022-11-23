@@ -7,12 +7,12 @@ import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
 
-public class LionsManeTest {
+public class LionManeTest {
     private final String sex;
     private final boolean expectedMane;
 
 
-    public LionsManeTest(String sex, boolean expectedMane) {
+    public LionManeTest(String sex, boolean expectedMane) {
         this.sex = sex;
         this.expectedMane = expectedMane;
     }

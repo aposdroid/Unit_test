@@ -1,5 +1,5 @@
-import com.example.Feline;
-import com.example.Lion;
+package com.example;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
@@ -17,7 +17,7 @@ public class LionTest {
 
 
     @Test
-    public void lionGetKittens() throws Exception {
+    public void lionGetKittensTest() throws Exception {
         Mockito.when(feline.getKittens()).thenReturn(7);
         Lion lion = new Lion("Самец", feline);
 
@@ -26,7 +26,7 @@ public class LionTest {
 
 
     @Test
-    public void lionGetFood() throws Exception {
+    public void lionGetFoodTest() throws Exception {
         Mockito.when(feline.getFood("Хищник")).thenReturn(List.of("Животные", "Птицы", "Рыба"));
         Lion lion = new Lion("Самец", feline);
 
